@@ -1,0 +1,346 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.whatsapp_float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+  }
+  .whatsapp-icon {
+    margin-top: 16px;
+  }
+
+  /* for mobile */
+  @media screen and (max-width: 767px){
+    .whatsapp-icon {
+      margin-top: 10px;
+    }
+    .whatsapp_float {
+      width: 40px;
+      height: 40px;
+      bottom: 20px;
+      right: 10px;
+      font-size: 22px;
+    }
+  }
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 7px;
+    padding: 5px;
+}
+
+.t1, .mt1, .t2, .t3{
+    margin: 4px;
+}
+
+.menu{
+    display: none;
+}
+
+.t2 ul{
+    display: flex;
+    list-style-type: none;
+    margin-top: 5px;
+}
+
+.t1 h1{
+    font-size: 30px;
+}
+
+.mt1 h1{
+    font-size: 28px;
+}
+
+.t2 ul li a {
+    text-decoration: none;
+    font-size: 23px;
+    padding: 3px;
+    margin: 2px;
+    color: black;
+}
+
+.t3 button{
+    padding: 5px 9px;
+    font-size: 17px;
+    border-radius: 21px;
+    /* background: #25D366; */
+    background: black;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.mt1{
+    display: none;
+}
+
+/* courousal  */
+  
+  .carousel-wrapper {
+    height: 400px;
+    position: relative;
+    /* width: 800px; */
+    width: 700px;
+    display: flex;
+    margin: 80px ;
+    border: 2px solid black;
+    border-radius: 22px;
+  }
+  
+  .carousel-item {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 25px 50px;
+    opacity: 0;
+    transition: all 0.8s ease-in-out;
+  }
+
+  .arrow{
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 12px;
+  }
+
+  .arrow-prev {
+    left: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(135deg);
+  
+  }
+
+  .arrow-next {
+    right: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+  }
+  
+  [id^= "item"] {
+    display: none;
+  }
+
+  .item-1 {
+    z-index: 2;
+    opacity: 1;
+    background: url('../assests/home_assets/wm.jpg');
+    background-size: contain;
+    border-radius: 22px;
+    border: 2px solid black;
+  }
+
+  .item-2 {
+    background: url('../assests/home_assets/oven.webp');
+    background-size: cover;
+    border-radius: 22px;
+    border: 2px solid black;
+  }
+
+  .item-3 {
+    background: url('../assests/home_assets/fridge1.jpg');
+    background-size: cover;
+    border-radius: 22px;
+    border: 2px solid black;
+  }
+  .item-4 {
+    background: url('../assests/home_assets/tv.webp'); 
+    background-size: contain;
+    border-radius: 22px;
+    border: 2px solid black;
+  }
+  .item-5 {
+    background: url('../assests/home_assets/wm1.jpeg');
+    background-size: cover;
+    border-radius: 22px;
+    border: 2px solid black;
+  }
+  .item-6 {
+    background: url('../assests/home_assets/ac.jpg');
+    background-size: contain;
+    border-radius: 22px;
+    border: 2px solid black;
+  }
+  .item-7 {
+    background: url('../assests/home_assets/fridge.jpeg');
+    background-size: cover;
+    border-radius: 22px;
+    border: 2px solid black;
+  }
+  .item-8 {
+    background: url('../assests/home_assets/ac1.webp');
+    background-size: cover;
+    border-radius: 22px;
+    border: 2px solid black;
+  }
+  .item-9 {
+    background: url('../assests/home_assets/tv2.jpg');
+    background-size: contain;
+    border-radius: 22px;
+    border: 2px solid black;
+  }
+  .item-10 {
+    background: url('../assests/home_assets/ac.jpg');
+    background-size: contain;
+    border-radius: 22px;
+    border: 2px solid black;
+  }
+  
+  *:target ~ .item-1{
+    opacity: 0;
+  }
+  #item-1:target ~ .item-1 {
+    opacity: 1;
+  
+  }
+  #item-2:target ~ .item-2, #item-3:target ~ .item-3 {
+    z-index: 3;
+    opacity: 1;
+  } 
+  #item-3:target ~ .item-3, #item-4:target ~ .item-4 {
+    z-index: 3;
+    opacity: 1;
+  } 
+  #item-4:target ~ .item-4, #item-5:target ~ .item-5 {
+    z-index: 3;
+    opacity: 1;
+  } 
+  #item-5:target ~ .item-5, #item-6:target ~ .item-6 {
+    z-index: 3;
+    opacity: 1;
+  } 
+  #item-6:target ~ .item-6, #item-7:target ~ .item-7 {
+    z-index: 3;
+    opacity: 1;
+  } 
+  #item-7:target ~ .item-7, #item-8:target ~ .item-8 {
+    z-index: 3;
+    opacity: 1;
+  } 
+  #item-8:target ~ .item-8, #item-9:target ~ .item-9 {
+    z-index: 3;
+    opacity: 1;
+  } 
+  #item-9:target ~ .item-9, #item-10:target ~ .item-10 {
+    z-index: 3;
+    opacity: 1;
+  } 
+  #item-10:target ~ .item-10, #item-1:target ~ .item-1 {
+    z-index: 3;
+    opacity: 1;
+  } 
+
+  .hero-section{
+    display: flex;
+  }
+
+  .hero-section p{
+    font-size: 20px;
+  }
+
+  .aside-section{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+@media only screen and (max-width: 600px){
+
+.t1 h1{
+    display: none;
+}
+    nav{
+        margin-top: 15px;
+    }
+
+    .t2 ul{
+        display: none;
+    }
+
+    .t1 , .mt1{
+        display: block;
+    }
+    .menu{
+        display: block;
+    }
+
+    .t3 button{
+        font-size: 19px;
+    }
+
+    .menu img{
+        height: 35px;
+        width: 35px;
+        margin-left: -15px;
+    }
+
+    .mt1 h1{
+        /* font-size: 25px; */
+    }
+
+    .carousel-wrapper{
+        margin: 50px auto ;
+        height: 270px;
+        width: 400px;
+    }
+
+    .item-9 {
+        background: url('../assests/home_assets/tv2.jpg');
+        background-size: contain;
+        border-radius: 22px;
+        border: 2px solid black;
+      }
+      .item-3 {
+        background: url('../assests/home_assets/fridge1.jpg');
+        background-size: contain;
+        border-radius: 22px;
+        border: 2px solid black;
+      }
+
+      .hero-section{
+        flex-direction: column;
+      }
+
+      .aside-section{
+        margin: 10px;
+      }
+
+      .aside-section p{
+        padding: 8px;
+      }
+
+      .aside-section h1{
+        margin-bottom: 15px;
+      }
+
+      .aside-section{
+        height: 25vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+      }
+
+
+}
