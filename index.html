@@ -6,16 +6,40 @@
     <title>DG Services</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="./assets/logo.jpeg" type="image/x-icon">
 </head>
 <body>
     <a href="https:/wa.me/+919867235163"  target="_blank" class="whatsapp_float"><i class="fa-brands fa-whatsapp whatsapp-icon"></i></a>
+
+<div class="mobile-nav">
+
+  <div class="mobile-top-nav">
+    <div class="nav-menu">
+      <img src="./assets/menu.png" onclick="closeSideBar()" alt="">
+    </div>
+
+    <div class="close-menu">
+      <img src="./assets/close.png" id="close-menu" onclick="closeSideBar()" alt="">
+    </div>
+  </div>
+
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Contact</a></li>
+</ul>
+
+</div>
+
 <nav>
+
 
     <div class="t1">
         <h1><a href="#">DG Services</a></h1>
     </div>
     <div class="menu">
-        <img src="./assets/menu.png" alt="">
+        <img src="./assets/menu.png" id="home-menu" onclick="showSideBar()" alt="">
     </div>
 
     <div class="t2">
@@ -108,7 +132,7 @@
         <p>Book the appointments you're just one call away ...</p>
     </div>
 </div>
-
+<script src="script.js"></script>
 
 
 
