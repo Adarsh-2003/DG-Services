@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@700&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Diphylleia&family=Inria+Sans:wght@700&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="shortcut icon" href="./assets/circ-logo-dg-services.png" type="image/x-icon">
 </head>
@@ -28,16 +30,15 @@
   </div>
 
   <ul>
-    <li><a href="#">Home</a></li>
-    <li><a href="#">About</a></li>
-    <li><a href="#">Services</a></li>
-    <li><a href="#">Contact</a></li>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#contact">Contact</a></li>
 </ul>
 
 </div>
 
-<nav>
-
+<nav id="home">
 
     <div class="t1">
         <h1><a href="#">DG Services</a></h1>
@@ -48,10 +49,10 @@
 
     <div class="t2">
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </div>
     <div class="mt1">
@@ -59,7 +60,7 @@
     </div>
 
     <div class="t3">
-        <button>Call Now</button>
+        <button> <a href="tel:+919867235163"> Call Now</a></button>
     </div>
 </nav>
 
@@ -134,13 +135,13 @@
         <!-- <br> -->
         <p>We offer meticulous repair service for home appliances</p>
         <p>Book the appointments you're just one call away ...</p>
-        <button class="button-23" role="button">Book an Appointment Now</button>
+        <button class="button-23" href="#contact" role="button">Book an Appointment Now</button>
     </div>
 </div>
 
 <!-- services section -->
 
-<section class="services">
+<section class="services" id="services">
   <h1>Our Services</h1>
 <div class="grid">
   <div class="grid-item">
@@ -206,9 +207,27 @@
 </div>
 </section>
 
+<!-- About us -->
+
+<section class="about" id="about">
+  <div class="about-container">
+    <div class="title">
+      <h1>About Us</h1>
+    </div>
+    <div class="info-container">
+    <h4>DG Services was established and founded by Mr Dayanand Gupta in 2009</h4>
+    <h4>We have 13+ years of experience in the domain</h4>
+    <h4>Our team consists of skilled and certified technicians who are experts in diagnosing and repairing a wide range of home appliances.</h4>
+    <h4>We believe in transparent communication. Before any repair work begins, our technicians will explain the issue, the proposed solution, and provide a clear estimate of costs.</h4>
+    <h4>We understand the value of your time. Our goal is to provide timely and efficient services, minimizing the disruption caused by appliance malfunctions.</h>
+  </div>
+</div>
+
+</section>
+
 <!-- Contact us  -->
 
-<section class="contact">
+<section class="contact" id="contact">
   <div class="contact-in">
     <div class="contact-map">
         <iframe src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=DG%20Services%20,%20Akruti%20Elegance,%20Gavanpada%20Rd,%20Gurupushyamrut%20Society,%20Gavanpada,%20Mahakali%20Nagar,%20Mulund%20East,%20Mulund,%20Mumbai,%20Maharashtra%20400081+(DG%20Services)&amp;t=k&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" width="100%" height="auto" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
@@ -229,16 +248,15 @@
 
 <footer class="footer">
   <div class="main-footer">
-    <div class="first">
-      <img src="./assets/circ-logo-dg-services.png" alt="hiiiii">
+    <div class="first"> <a href="#home"><img src="./assets/circ-logo-dg-services.png" alt="hiiiii"></a>
     </div>
 
     <div class="mid">
       <ul>
-        <li><a href="">Home</a></li>
-        <li><a href="">About</a></li>
-        <li><a href="">Services</a></li>
-        <li><a href="">Contacts</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contacts</a></li>
       </ul>
     </div>
 
@@ -253,17 +271,17 @@
 
     <div class="socials">
       <p>Socials</p>
-      <a href="#"><img src="./assets/wp.png" alt=""></a>
-      <a href="#"><img src="./assets/fb.png" alt=""></a>
-      <a href="#"><img src="./assets/map.png" alt=""></a>
-      <a href="#"><img src="./assets/insta.png" alt=""></a>
+      <a target=”_blank” href="#"><img src="./assets/wp.png" alt=""></a>
+      <a target=”_blank” href="https://www.facebook.com/dayanand.gupta.712"><img src="./assets/fb.png" alt=""></a>
+      <a target=”_blank” href="https://maps.app.goo.gl/EJxGcXumqYWAKQWs7"><img src="./assets/map.png" alt=""></a>
+      <a target=”_blank” href="https://www.instagram.com/"><img src="./assets/insta.png" alt=""></a>
     </div>
 
   </div>
 
   <div class="sub-footer">
     <p> ©️2023 DG Services All rights reserved.</p>
-    <p>Developed with ❤️ by <a href="">Adarsh Gupta</a></p>
+    <p>Developed with ❤️ by <a href="https://adarshgupta.pages.dev/">Adarsh Gupta</a></p>
   </div>
 
 </footer>

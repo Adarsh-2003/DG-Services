@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth;
 }
 
 .whatsapp_float {
@@ -67,10 +70,13 @@ nav {
   text-decoration: none;
   font-size: 30px;
   color: black;
+  font-family: 'Diphylleia', serif;
 }
 
 .mt1 h1 {
   font-size: 28px;
+  font-weight: 900;
+  font-family: 'Diphylleia', serif;
 }
 
 .t2 ul li a {
@@ -86,15 +92,57 @@ nav {
   font-size: 17px;
   border-radius: 21px;
   /* background: #25D366; */
-  background: black;
+  background: #222222;
   color: white;
   font-weight: bold;
   cursor: pointer;
+  transition: box-shadow .2s, -ms-transform .1s, -webkit-transform .1s, transform .1s;
+}
+
+.t3 button a{
+  color: white;
+  text-decoration: none;
+}
+
+.t3 button:focus-visible {
+  box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
+  transition: box-shadow .2s;
+}
+
+.t3 button:active {
+  background-color: #F7F7F7;
+  color: black;
+  border-color: #000000;
+  transform: scale(.96);
+}
+
+.t3 button:disabled {
+  cursor: not-allowed;
+  opacity: 1;
 }
 
 .mt1 {
   display: none;
 }
+
+/* underline animation */
+
+.t2 ul li a{
+  font-size: 25px;
+  text-decoration: none;
+  display: inline-block;
+  background: linear-gradient(black 0 0) 
+      bottom left/
+      var(--underline-width, 0%) 0.1em
+      no-repeat;
+  color: black;
+  padding: 0 .5em 0.2em;
+  transition: background-size 0.5s;
+  }
+  
+  .t2 ul li a:hover{
+      --underline-width: 100%;
+  }
 
 /* courousal  */
 
@@ -298,11 +346,19 @@ nav {
   align-items: center;
 }
 
+.aside-section h1{
+  font-family: 'Diphylleia', serif;
+}
+
 .mobile-nav {
   display: none;
 }
 
 /* grid */
+
+.services h1{
+  padding-top: 20px;
+}
 
 .grid {
   display: grid;
@@ -336,7 +392,7 @@ nav {
 .grid-item:hover {
   cursor: pointer;
   transform: scale(1.05);
-  /* transition: transform 0.5s ease-in-out; */
+  transition: transform 0.5s ease-in-out;
 }
 
 .photo img {
@@ -359,6 +415,68 @@ nav {
 section h1 {
   text-align: center;
   font-size: 33px;
+}
+
+/* about */
+
+.about{
+  position: relative;
+  height: 100vh;
+  color: white;
+  z-index: 1;
+}
+
+.about::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url('./assets/mum.jpg') center/cover no-repeat;
+  /* opacity: 0.8; */
+  z-index: -1;
+}
+
+.title h1{
+  font-size: 40px;
+  margin-top: 40px;
+}
+
+.info-container h4{
+  /* background-color: #15232C; */
+  background-color: #16242D;
+  /* background-color: #2C1D16; */
+}
+
+.info-container{
+  padding: 50px 90px;
+  font-size: 22px;
+  font-family: 'Inria Sans', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+
+}
+
+.info-container h4{
+  margin: 20px;
+  font-weight: 900;
+}
+
+@media only screen and (max-width: 620px){
+  .title h1{
+    font-size: 30px;
+  }
+
+  .info-container{
+    padding: 5px 10px;
+    font-size: 15px;
+    text-align: center;
+}
 }
 
 /* contact */
@@ -487,6 +605,10 @@ section h1 {
   margin-bottom: 10px;
 }
 
+.sub-footer p a {
+  color: green;
+}
+
 .socials{
   text-align: center; 
 }
@@ -602,6 +724,7 @@ section h1 {
 
   .aside-section {
     margin: 10px;
+    
   }
 
   .aside-section p {
@@ -611,6 +734,7 @@ section h1 {
   .aside-section h1 {
     margin-bottom: 15px;
     font-size: 30px;
+    font-family: 'Diphylleia', serif!important;
   }
 
   .aside-section {
@@ -795,7 +919,7 @@ section h1 {
   }
 
   .contact{
-    margin-top: 20px;
+    /* margin-top: px; */
     background: url('./assets/earth-mob.jpg') center/cover no-repeat;
     height: 130vh;
   }
@@ -809,4 +933,11 @@ section h1 {
     padding: 10px;
   }
 
+  .about{
+    /* margin-bottom: 10px; */
+    height: 107vh;
+  }
+
+
 }
+
