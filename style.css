@@ -788,6 +788,11 @@ section h1 {
     filter: invert(1);
   }
 
+  .menu img{
+    -webkit-filter: invert(1);
+    filter: invert(1);
+  }
+
   .close-menu img {
     margin: 25px;
     height: 33px;
