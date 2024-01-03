@@ -5,6 +5,15 @@
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
   scroll-behavior: smooth;
+  color: white!important;
+}
+
+body{
+  background-color: #121535;
+}
+
+#home{
+  background-color: #090A1A;
 }
 
 .whatsapp_float {
@@ -91,8 +100,7 @@ nav {
   padding: 7px 10px;
   font-size: 17px;
   border-radius: 21px;
-  /* background: #25D366; */
-  background: #222222;
+  background: #121535;
   color: white;
   font-weight: bold;
   cursor: pointer;
@@ -110,7 +118,7 @@ nav {
 }
 
 .t3 button:active {
-  background-color: #F7F7F7;
+  background-color: #25D366;
   color: black;
   border-color: #000000;
   transform: scale(.96);
@@ -131,7 +139,7 @@ nav {
   font-size: 25px;
   text-decoration: none;
   display: inline-block;
-  background: linear-gradient(black 0 0) 
+  background: linear-gradient(white 0 0) 
       bottom left/
       var(--underline-width, 0%) 0.1em
       no-repeat;
@@ -362,17 +370,16 @@ nav {
 
 .grid {
   display: grid;
-  /* grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); */
   grid-template-columns: 1fr 1fr 1fr;
   gap: 25px;
-  /* grid-template-rows: repeat(3, 1fr); */
   padding: 50px;
   margin: 0 auto;
   place-items: center;
+  color: black;
 }
 
 .grid-item {
-  background-color: #ccc;
+  background-color: #090A1A;
   text-decoration-style: none;
   border: 1px solid #aaa;
   padding: 15px;
@@ -434,7 +441,6 @@ section h1 {
   bottom: 0;
   left: 0;
   background: url('./assets/mum.jpg') center/cover no-repeat;
-  /* opacity: 0.8; */
   z-index: -1;
 }
 
@@ -444,9 +450,7 @@ section h1 {
 }
 
 .info-container h4{
-  /* background-color: #15232C; */
   background-color: #16242D;
-  /* background-color: #2C1D16; */
 }
 
 .info-container{
@@ -576,6 +580,8 @@ section h1 {
 .first img{
   height: 200px;
   width: auto;
+  -webkit-filter: invert(1);
+  filter: invert(1);
 }
 
 .main-footer{
@@ -584,7 +590,6 @@ section h1 {
   padding: 10px 0px 0px 100px;
   justify-content: center;
   align-items: center;
-  /* text-align: center; */
 }
 
 .mid ul li a , .end ul li a{
@@ -614,7 +619,7 @@ section h1 {
 }
 
 .socials a:first-of-type img {
-  height: 43px;
+  height: 39px;
 }
 
 .socials img{
@@ -779,6 +784,8 @@ section h1 {
     margin: 20px;
     height: 40px;
     width: 40px;
+    -webkit-filter: invert(1);
+    filter: invert(1);
   }
 
   .close-menu img {
@@ -828,7 +835,7 @@ section h1 {
 }
 
 .button-23 {
-  background-color: #FFFFFF;
+  background-color: #090A1A;
   border: 1px solid #222222;
   border-radius: 8px;
   padding: 10px;
@@ -859,8 +866,8 @@ section h1 {
 }
 
 .button-23:hover {
-  background-color: #222222;
-  color: white;
+  background-color: #25D366;
+    color: white;
 }
 
 
@@ -937,7 +944,4 @@ section h1 {
     /* margin-bottom: 10px; */
     height: 107vh;
   }
-
-
 }
-
