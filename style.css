@@ -696,8 +696,9 @@ section h1 {
   }
 
   .menu img {
-    height: 35px;
-    width: 35px;
+    height: 30px;
+    width: 30px;
+    margin-top: 6px;
     margin-left: -15px;
   }
   
@@ -781,9 +782,10 @@ section h1 {
   }
 
   .nav-menu img {
+    margin-top: 4px;
     margin: 20px;
-    height: 40px;
-    width: 40px;
+    height: 30px;
+    width: 30px;
     -webkit-filter: invert(1);
     filter: invert(1);
   }
@@ -795,12 +797,13 @@ section h1 {
 
   .close-menu img {
     margin: 25px;
-    height: 33px;
-    width: 30px;
+    height: 23px;
+    filter: invert(1);
   }
 
   .mobile-top-nav {
     display: flex;
+    margin-top: 11px;
     justify-content: space-between;
   }
 
